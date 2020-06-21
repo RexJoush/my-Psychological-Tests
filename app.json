@@ -1,8 +1,8 @@
 {
   "pages":[
+    "pages/my/my",
     "pages/home/home",
-    "pages/discover/discover",
-    "pages/my/my"
+    "pages/discover/discover"
   ],
   "tabBar": {
     "list": [
@@ -33,7 +33,7 @@
   },
   "window":{
     "backgroundTextStyle":"light",
-    "navigationBarBackgroundColor": "#fff",
+    "navigationBarBackgroundColor": "#FF7F50",
     "navigationBarTitleText": "WeChat",
     "navigationBarTextStyle":"black"
   },

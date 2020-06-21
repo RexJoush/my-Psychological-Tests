@@ -1,2 +1,15 @@
-<!--pages/my/my.wxml-->
-<text>pages/my/my.wxml</text>
+<view id="userinfo">
+  <view wx:if="{{unlogin}}">
+    <button bindtap="login" id="login">登录</button>
+  </view>
+  <view wx:if="{{logined}}">
+    <!-- <view id='avatarUrl'>
+      <image src='{{avatarUrl}}'></image>
+    </view>
+    <view id='nickName'>
+      {{nickName}}
+    </view> -->
+    <open-data id='avatarUrl' type="userAvatarUrl"></open-data>
+    <open-data id='nickName' type="userNickName"></open-data>
+  </view>
+</view>
