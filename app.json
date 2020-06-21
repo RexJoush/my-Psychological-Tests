@@ -2,6 +2,7 @@
   "pages":[
     "pages/my/my",
     "pages/home/home",
+
     "pages/discover/discover"
   ],
   "tabBar": {
