@@ -2,8 +2,6 @@
 var httpsApi = "https://www.rexjoush.com";
 var app = getApp();
 Page({
-  
-  
   /**
    * 页面的初始数据
    */
@@ -30,13 +28,13 @@ Page({
       fail () {
         // session_key 已经失效，需要重新执行登录流程
         console.log("fail");
+        // console.log("fail");
         this.login() //重新登录
       }
     })
   },
 
   login: function () {
-    console.log("aa");
     wx.login({
       success (res) {
         if (res.code) {

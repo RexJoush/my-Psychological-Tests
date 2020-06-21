@@ -13,3 +13,11 @@
     <open-data id='nickName' type="userNickName"></open-data>
   </view>
 </view>
+<br/>
+<br/>
+<van-cell-group>
+  <van-cell class="mycell" title="心理测评" size="large" is-link link-type="navigateTo" url="pages/mePsychologicalTest/mePsychologicalTest"/>
+  <van-cell class="mycell" title="心理咨询" size="large" is-link link-type="navigateTo" url="pages/mePsychologicalCounseling/mePsychologicalCounseling"/>
+  <van-cell class="mycell" title="心理课程" size="large" is-link link-type="navigateTo" url="pages/mePsychologicalCourses/mePsychologicalCourses"/>
+  <van-cell class="mycell" title="心理成长" size="large" is-link link-type="navigateTo" url="pages/mePsychologicalGrow/mePsychologicalGrow"/>
+</van-cell-group>

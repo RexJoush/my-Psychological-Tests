@@ -2,7 +2,12 @@
   "pages":[
     "pages/my/my",
     "pages/home/home",
-    "pages/discover/discover"
+    "pages/discover/discover",
+    "pages/mePsychologicalTest/mePsychologicalTest",
+    "pages/mePsychologicalCounseling/mePsychologicalCounseling",
+    "pages/mePsychologicalCourses/mePsychologicalCourses",
+    "pages/mePsychologicalGrow/mePsychologicalGrow"
+    
   ],
   "tabBar": {
     "list": [
@@ -37,6 +42,14 @@
     "navigationBarTitleText": "WeChat",
     "navigationBarTextStyle":"black"
   },
-  "style": "v2",
-  "sitemapLocation": "sitemap.json"
+  "sitemapLocation": "sitemap.json",
+  "usingComponents": {
+    "van-button": "@vant/weapp/button/index",
+    "van-row": "@vant/weapp/row/index",
+    "van-col": "@vant/weapp/col/index",
+    "van-grid": "@vant/weapp/grid/index",
+    "van-grid-item": "@vant/weapp/grid-item/index",
+    "van-cell": "@vant/weapp/cell/index",
+    "van-cell-group": "@vant/weapp/cell-group/index"
+  }
 }
