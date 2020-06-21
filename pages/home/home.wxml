@@ -1,2 +1,7 @@
-<!--pages/home/home.wxml-->
-<text>pages/home/home.wxml</text>
+    <swiper indicator-dots="true" autoplay="true" class="swiper">
+        <block wx:for="{{bannerArr}}">
+            <swiper-item class="banner-item" bindtap="onProductsItemTap" data-id="{{item.key_word}}">
+                <image class="item-image" src="{{item.img.url}}" mode="aspectFill" />
+            </swiper-item>
+        </block>
+    </swiper>
