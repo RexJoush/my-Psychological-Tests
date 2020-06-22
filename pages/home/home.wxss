@@ -1,1 +1,25 @@
-/* pages/home/home.wxss */
+.swiper{
+    height: 200rpx;
+    width: 100%;
+  }
+  .swiper-box{
+    overflow-x: hidden;
+  }
+  .banner-item{
+    height: 100%;
+    width: 100%;
+  }
+  .banner-item image{
+    height: 100%;
+    width: 100%;
+  }
+
+  .home-header {
+      display: flex;
+      justify-content: space-around;
+  }
+
+  .home-header image {
+      width: 80rpx;
+      height: 80rpx;
+  }
