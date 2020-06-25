@@ -5,7 +5,7 @@ class Config {
   }
 }
 
-Config.restUrl = 'http://www.rexjoush.com:3000';//REST API 基地址
+Config.restUrl = 'http://www.rexjoush.com:3000/wxapp/';//REST API 基地址
 
 
 export { Config };

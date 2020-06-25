@@ -9,10 +9,10 @@ class Home extends Base {
   getBannerData(callback) {
     var that = this;
     var param = {
-      url: '/test?data=aaa',
+      url: 'pages/home/getBannerData',
 
       sCallback: function (data) {
-        data = data.items;
+        // data = data.items;
         callback && callback(data);
       }
     };

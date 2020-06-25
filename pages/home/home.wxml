@@ -1,20 +1,34 @@
     
 <view>
-    <view class="container home-container" hidden="{{!loadingHidden}}">
-        <swiper indicator-dots="true" autoplay="true" class="swiper">
-            <block wx:for="{{bannerArr}}">
-                <swiper-item class="banner-item" bindtap="onProductsItemTap" data-id="{{item.key_word}}">
-                    <image class="item-image" src="{{item.img.url}}" mode="aspectFill" />
-                </swiper-item>
-            </block>
-        </swiper>
+    <swiper indicator-dots="true" autoplay="true" class="swiper">
+        <block wx:for="{{bannerArr}}">
+            <swiper-item class="banner-item" bindtap="onProductsItemTap" data-id="{{item.key_word}}">
+                <image class="item-image" src="{{item}}" mode="widthFix"/>
+            </swiper-item>
+        </block>
+    </swiper>
+    <view class="tab">
+        <view class="tab_menu">
+            <view class="menu_item {{index==active?'cur':''}}" 
+                wx:for="{{menus}}"
+                wx:for-item="menu"
+                data-index="{{index}}"
+                bindtap="toggle"
+            >
+                <image class="menu_icon" src="{{menu.url}}" />
+                <text class="menu_name">{{menu.name}}</text>
+            </view>
+        </view>
+        <view class="tab_cons">
+            <view wx:for="{{cons}}" class="{{index==active?'cur':''}}">
+                <block wx:for="{{item}}" wx:key="index">
+                    <text>{{item.name}}{{item.desc}}</text>
+                </block>
+            </view>
+        </view>
+
     </view>
-    <view class="home-header">
-      <image src='../../imgs/index_icon/health.png'></image>
-      <image src='../../imgs/index_icon/consult.png'></image>
-      <image src='../../imgs/index_icon/online_course.png'></image>
-      <image src='../../imgs/index_icon/eap.png'></image>
-    </view>
+
 </view>
 <loading hidden="{{loadingHidden}}">
     加载中...

@@ -1,5 +1,5 @@
-.swiper{
-    height: 200rpx;
+  .swiper{
+    height: 350rpx;
     width: 100%;
   }
   .swiper-box{
@@ -14,12 +14,34 @@
     width: 100%;
   }
 
-  .home-header {
-      display: flex;
-      justify-content: space-around;
+  .tab .tab_menu .menu_item {
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+    box-sizing: border-box;
+    padding-bottom: 10px;
+    padding-top: 10px;
+  }
+  .tab .tab_menu .menu_icon {
+    width: 40px;
+    height: 40px;
+    padding-bottom: 5px;
+  }
+  .tab .tab_menu {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+  
+
+  .tab .tab_cons view{
+    display: none; 
+    text-align: left;  
   }
 
-  .home-header image {
-      width: 80rpx;
-      height: 80rpx;
+  .tab .tab_cons .cur{
+    display: block;
   }
