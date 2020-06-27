@@ -9,7 +9,7 @@ class Home extends Base {
   getBannerData(callback) {
     var that = this;
     var param = {
-      url: 'pages/home/getBannerData',
+      url: 'home/getBannerData',
 
       sCallback: function (data) {
         // data = data.items;
@@ -18,6 +18,20 @@ class Home extends Base {
     };
     this.request(param);
   }
+
+  getCourseData(callback) {
+    var that = this;
+    var param = {
+      url: 'home/getCourseData',
+
+      sCallback: function (data) {
+        // data = data.items;
+        callback && callback(data);
+      }
+    };
+    this.request(param);
+  }
+  
 };
 
 export { Home };

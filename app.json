@@ -3,6 +3,7 @@
     "pages/my/my",
     "pages/home/home",
     "pages/discover/discover",
+    "pages/homeDetail/homeDetail",
     "pages/mePsychologicalTest/mePsychologicalTest",
     "pages/mePsychologicalCounseling/mePsychologicalCounseling",
     "pages/mePsychologicalCourses/mePsychologicalCourses",
