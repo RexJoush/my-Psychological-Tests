@@ -1,18 +1,35 @@
-// pages/discover/discover.js
+/*
+ * @Author: bonny
+ * @Date: 2020-07-02 21:26:38
+ * @LastEditTime: 2020-07-02 22:31:42
+ * @LastEditors: Please set LastEditors
+ * @Description: In User Settings Edit
+ * @FilePath: \my-Psychological-Tests\pages\testDetail\testDetail.js
+ */ 
+// pages/testDetail/testDetail.js
+import { TestDetail } from 'testDetail-model.js';
+var testDetail=new TestDetail();  //实例化 home 的推荐页面
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    active: 0
+    detailImg: ''
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-
+    // var that = this;
+    console.log('options',options)
+    testDetail.getTestDetail(options.test_id, (data) => {
+      this.setData({
+        detailImg: data.details_img_url,
+      });
+      console.log('res',data.details_img_url)
+    })
   },
 
   /**

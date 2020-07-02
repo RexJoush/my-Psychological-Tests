@@ -1,0 +1,4 @@
+<view class="textlist-container" bind:tap="gotoTextList">
+    <view>{{textlist.name}}</view>
+    <view>{{textlist.introduction}}</view>
+</view>

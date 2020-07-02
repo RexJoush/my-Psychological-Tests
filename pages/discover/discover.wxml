@@ -1,2 +1,32 @@
-<!--pages/discover/discover.wxml-->
-<text>pages/discover/discover.wxml</text>
+<van-tabs active="{{ active }}"
+    title-active-color="#FF7F50"
+    color="#FF7F50"
+>
+  <van-tab title="心理测评" class="cateFirst">
+    <van-tabs type="card">
+        <van-tab title="标签 1">内容 1</van-tab>
+        <van-tab title="标签 2">内容 2</van-tab>
+        <van-tab title="标签 3">内容 3</van-tab>
+    </van-tabs>
+  </van-tab>
+  <van-tab title="咨询服务" class="cateFirst">
+    <van-tabs swipeable>
+        <van-tab title="性别">内容 1</van-tab>
+        <van-tab title="擅长领域">内容 2</van-tab>
+        <van-tab title="咨询形式">内容 3</van-tab>
+        <van-tab title="适用人群">内容 4</van-tab>
+    </van-tabs>
+  </van-tab>
+  <van-tab title="线上课程" class="cateFirst">
+      内容 
+  </van-tab>
+  <van-tab title="心理成长活动" class="cateFirst">
+      内容 4
+  </van-tab>
+  <van-tab title="心理测评通用平台" class="cateFirst">
+      内容 5
+  </van-tab>
+  <van-tab title="员工辅助计划（EAP）" class="cateFirst">
+      内容 6
+  </van-tab>
+</van-tabs>

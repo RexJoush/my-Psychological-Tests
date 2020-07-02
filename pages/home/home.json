@@ -1,4 +1,8 @@
 {
   "usingComponents": {
-  }
+    "l-textlist": "/components/textlist/textlist",
+    "y-testlist": "/components/testlist/testlist",
+    "h-courselist": "/components/courselist/courselist"
+  },
+  "enablePullDownRefresh": true
 }

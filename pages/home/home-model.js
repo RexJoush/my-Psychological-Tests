@@ -12,12 +12,36 @@ class Home extends Base {
       url: 'home/getBannerData',
 
       sCallback: function (data) {
-        // data = data.items;
         callback && callback(data);
       }
     };
     this.request(param);
   }
+
+  getPsyTestData(callback) {
+    var that = this;
+    var param = {
+      url: 'home/getPsyTestData',
+
+      sCallback: function (data) {
+        callback && callback(data);
+      }
+    };
+    this.request(param);
+  }
+
+  getPsyCounseling(callback) {
+    var that = this;
+    var param = {
+      url: 'home/getPsyCounseling',
+
+      sCallback: function (data) {
+        callback && callback(data);
+      }
+    };
+    this.request(param);
+  }
+
 
   getCourseData(callback) {
     var that = this;
@@ -25,7 +49,18 @@ class Home extends Base {
       url: 'home/getCourseData',
 
       sCallback: function (data) {
-        // data = data.items;
+        callback && callback(data);
+      }
+    };
+    this.request(param);
+  }
+
+  getEap(callback) {
+    var that = this;
+    var param = {
+      url: 'home/getEap',
+
+      sCallback: function (data) {
         callback && callback(data);
       }
     };

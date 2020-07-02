@@ -1,0 +1,32 @@
+  .courselist-container {
+    height: 220rpx;
+    display: flex;
+    padding: 15rpx;
+    border-bottom: 1px solid #ccc;
+  }
+
+  .courselist-container image {
+    width: 220rpx;
+    height: auto;
+    margin-right: 20rpx;
+    box-shadow: 5rpx 5rpx 5rpx rgba(241, 140, 46, 0.774) ;
+  }
+
+  .imgcard-info {
+    flex: 1;
+    margin-left: 10rpx;
+    width: 90%;
+  }
+
+  .imgcard-title {
+    color: #666;
+    font-size: 38rpx;
+    font-weight: bolder;
+    line-height: 50rpx;
+    margin-bottom: 20rpx;
+  }
+
+  .imgcard-text {
+    font-size: 30rpx;
+    line-height: 55rpx;
+  }

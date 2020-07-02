@@ -47,49 +47,14 @@
   .tab .tab_cons .cur{
     display: block;
   }
-  .item-card {
+
+  .eap-card {
+    height: 600rpx;
+    width: 100%;
+  }
+  .eap-info {
     display: block;
-    height: 100rpx;
-    padding: 15rpx;
-    border-bottom: 1px solid #ccc;
   }
-  .item-card view {
-    height: 50rpx;
-    line-height: 50rpx;
-  }
-
-  .item-imgcard {
-    height: 300rpx;
-    display: flex;
-    padding: 15rpx;
-    border-bottom: 1px solid #ccc;
-  }
-  .item-imgcard image {
-    width: 220rpx;
-    height: auto;
-    margin-right: 20rpx;
-    box-shadow: 5rpx 5rpx 5rpx rgba(241, 140, 46, 0.774) ;
-  }
-
-  .imgcard-info {
-    flex: 1;
-    margin-left: 10rpx;
-    width: 90%;
-  }
-
-  .imgcard-title {
-    color: #666;
-    font-size: 38rpx;
-    font-weight: bolder;
-    line-height: 50rpx;
-    margin-bottom: 20rpx;
-  }
-
-  .imgcard-text {
+  .eap-title {
     font-size: 30rpx;
-    line-height: 55rpx;
   }
-
-  /* .eap-card {
-    border-bottom: none !important;
-  } */

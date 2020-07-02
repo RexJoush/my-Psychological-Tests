@@ -1,0 +1,9 @@
+<view class="testlist-container" bind:tap="gotoTestList">
+    <image src="{{testlist.img_url}}" />
+    <view class="imgcard-info">
+        <view class="imgcard-title">{{testlist.expertise}}</view>
+        <view class="imgcard-text">{{testlist.introduction}}</view>
+        <view>{{testlist.price}}</view>
+        <view>{{testlist.form}}</view>
+    </view>
+</view>

@@ -1,62 +1,51 @@
-    
-<view>
-    <swiper indicator-dots="true" autoplay="true" class="swiper">
-        <block wx:for="{{bannerArr}}">
-            <swiper-item class="banner-item" bindtap="onProductsItemTap" data-id="{{item.key_word}}">
-                <image class="item-image" src="{{item.label}}" mode="widthFix"/>
-            </swiper-item>
-        </block>
-    </swiper>
-    <view class="tab">
-        <view class="tab_menu">
-            <view class="menu_item {{index==active?'cur':''}}" 
-                wx:for="{{menus}}"
-                wx:for-item="menu"
-                data-index="{{index}}"
-                bindtap="toggle"
-            >
-                <image class="menu_icon" src="{{menu.url}}" />
-                <text class="menu_name">{{menu.name}}</text>
-            </view>
+<swiper indicator-dots="true" autoplay="true" class="swiper">
+    <block wx:for="{{bannerArr}}">
+        <swiper-item class="banner-item" bindtap="onProductsItemTap" data-id="{{item.key_word}}">
+            <image class="item-image" src="{{item.label}}" mode="widthFix"/>
+        </swiper-item>
+    </block>
+</swiper>
+<view class="tab">
+    <view class="tab_menu">
+        <view class="menu_item {{index==active?'cur':''}}" 
+            wx:for="{{menus}}"
+            wx:for-item="menu"
+            data-index="{{index}}"
+            bindtap="toggle"
+        >
+            <image class="menu_icon" src="{{menu.url}}" />
+            <text class="menu_name">{{menu.name}}</text>
         </view>
-        <view wx:if="{{active == 0}}" class="cur" data-id="0" bindtap="toDetail">
-            <view wx:for="{{psyTestData}}" class="item-card">
-                <view>{{item.name}}</view>
-                <view>{{item.desc}}</view>
-            </view>
+    </view>
+    <view wx:if="{{active == 0}}" class="cur" data-id="0">
+        <view class="textlist-container">
+            <block wx:for="{{psyTestData}}">
+                <l-textlist textlist="{{item}}"></l-textlist>
+            </block>
         </view>
-        <view wx:if="{{active == 1}}" class="cur" data-id="1" bindtap="toDetail">
-            <view wx:for="{{psyCounseling}}" class="item-imgcard">
-                <image src="{{item.imgurl}}" />
-                <view class="imgcard-info">
-                    <view class="imgcard-title">{{item.export}}</view>
-                    <view class="imgcard-text">{{item.desc}}</view>
-                    <view>{{item.price}}</view>
-                    <view>{{item.form}}</view>
-                </view>
-            </view>
+    </view>
+    <view wx:if="{{active == 1}}" class="cur" data-id="1">
+        <view class="testlist-container">
+            <block wx:for="{{psyCounseling}}">
+                <y-testlist testlist="{{item}}"></y-testlist>
+            </block>
         </view>
-        <view wx:if="{{active == 2}}" class="cur" data-id="2" bindtap="toCourseMenu">
-            <view wx:for="{{courseData}}" class="item-imgcard">
-                <image src="{{item.imgurl}}" />
-                <view class="imgcard-info">
-                    <view class="imgcard-title">{{item.intro}}</view>
-                    <view>{{item.title}}</view>
-                    <view>{{item.subtitle}}</view>
-                </view>
-            </view>
+    </view>
+    <view wx:if="{{active == 2}}" class="cur" data-id="2">
+        <view class="courselist-container">
+            <block wx:for="{{courseData}}">
+                <h-courselist courselist="{{item}}"></h-courselist>
+            </block>
         </view>
-        <view wx:if="{{active == 3}}" class="cur" data-id="3" bindtap="toDetail">
-            <view wx:for="{{eapData}}" class="item-imgcard eap-card">
-                <view class="imgcard-info">
-                    <view class="imgcard-title">{{item.title}}</view>
-                    <view>{{item.intro}}</view>
-                    <view>{{item.subtitle}}</view>
-                </view>
-                <image src="{{item.imgurl}}" />
+    </view>
+    <view wx:if="{{active == 3}}" class="cur" data-id="3">
+        <view wx:for="{{eapData}}" class="eap-card">
+            <view class="eap-info">
+                <view class="eap-title">{{item.title}}</view>
+                <view>{{item.subtitle}}</view>
             </view>
+            <image src="{{item.img_url}}" />
         </view>
-
     </view>
 
 </view>
