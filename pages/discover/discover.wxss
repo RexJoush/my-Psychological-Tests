@@ -1,26 +1,4 @@
-.cateFirst  .van-tab {
-    margin-right: 20rpx;
-    width: 60rpx;
-}
-
-.cateFirst {
-    padding: 5rpx;
-}
-
-.cateFirst .van-ellipsis {
-    border-radius: 40rpx;
-    border: 1px solid #FF7F50;
-}
-
-.van-tabs__nav--card  {
-    border: none !important;
-}
-
-.van-tabs__nav--card .van-tab  {
-    color: #FF7F50;
-}
-
-.van-tabs__nav--card .van-tab.van-tab--active  {
-    color: #FF7F50 !important;
-    background-color: #eeeeee !important;
+.test-container {
+    height: auto;
+    border-bottom: coral;
 }

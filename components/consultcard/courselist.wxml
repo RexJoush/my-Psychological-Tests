@@ -1,0 +1,4 @@
+<view class="concard-container" bind:tap="gotoFindList">
+    <view class="name">{{consultcard.consultant_name}}</view>
+    <image src="{{consultcard.img_url}}" />
+</view>

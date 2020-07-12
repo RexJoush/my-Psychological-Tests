@@ -1,4 +1,4 @@
-<view class="testlist-container" bind:tap="gotoTestList">
+<view class="testlist-container" bind:tap="gotoConList">
     <image src="{{testlist.img_url}}" />
     <view class="imgcard-info">
         <view class="imgcard-title">{{testlist.expertise}}</view>

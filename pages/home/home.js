@@ -1,8 +1,8 @@
 /*
  * @Author: your name
  * @Date: 2020-06-20 16:23:01
- * @LastEditTime: 2020-07-02 21:06:32
- * @LastEditors: your name
+ * @LastEditTime: 2020-07-12 12:27:14
+ * @LastEditors: Bonny.meng
  * @Description: In User Settings Edit
  * @FilePath: \my-Psychological-Tests\pages\home\home.js
  */ 
@@ -54,35 +54,35 @@ Page({
     // 获得bannar信息
     home.getBannerData((data) => {
       that.setData({
-        bannerArr: data,
+        bannerArr: data.data,
       });
     });
 
     //获得心理测评数据
     home.getPsyTestData((data) => {
       that.setData({
-        psyTestData: data,
+        psyTestData: data.data,
       });
     })
 
     //获得心理咨询数据
     home.getPsyCounseling((data) => {
       that.setData({
-        psyCounseling: data,
+        psyCounseling: data.data,
       });
     })
 
     //获得线上课程数据
     home.getCourseData((data) => {
       that.setData({
-        courseData: data,
+        courseData: data.data,
       });
     })
 
     //获得EAP数据
     home.getEap((data) => {
       that.setData({
-        eapData: data,
+        eapData: data.data,
       });
     })
   },

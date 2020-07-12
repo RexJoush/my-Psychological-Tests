@@ -1,0 +1,43 @@
+
+.title {
+  margin: 20rpx 0 20rpx 20rpx;
+  font-size: 36rpx;
+  height: 40rpx;
+}
+
+.condetail {
+  display: flex;
+  height: 280rpx;
+  background-color: bisque;
+  padding: 20rpx;
+ 
+}
+.condetail image {
+  width: 220rpx;
+  height: auto;
+  margin-right: 20rpx;
+  border: 1px solid black;
+}
+
+.con-main {
+  flex: 1;
+  margin-left: 10rpx;
+  width: 90%;
+  align-items: stretch;
+}
+.con-tit {
+  font-size: 34rpx;
+  height: 50rpx;
+}
+.con-form {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 120rpx;
+}
+.con-form > text {
+  display: inline-block;
+}
+.detail-img {
+  width: 100%
+}
+

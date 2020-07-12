@@ -3,11 +3,11 @@
  * @Autor: Bonny.meng
  * @Date: 2020-07-09 07:14:22
  * @LastEditors: Bonny.meng
- * @LastEditTime: 2020-07-12 12:47:32
+ * @LastEditTime: 2020-07-12 12:51:36
  */ 
 
-import { TestDetail } from 'testDetail-model.js';
-var testDetail=new TestDetail();  
+import { courseDetail } from 'courseDetail-model.js';
+var courseDetail=new CourseDetail();  
 Page({
 
   /**

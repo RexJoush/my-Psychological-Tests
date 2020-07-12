@@ -1,0 +1,8 @@
+.concard-container {
+  display: flex;
+}
+image {
+  border: 1px solid black;
+  width: 220rpx;
+  height: 220rpx;
+}

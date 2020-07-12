@@ -3,18 +3,18 @@
  * @Autor: Bonny.meng
  * @Date: 2020-07-09 07:14:22
  * @LastEditors: Bonny.meng
- * @LastEditTime: 2020-07-12 12:47:32
+ * @LastEditTime: 2020-07-12 13:23:46
  */ 
 
-import { TestDetail } from 'testDetail-model.js';
-var testDetail=new TestDetail();  
+import { ConDetail } from 'conDetail-model.js';
+var conDetail=new ConDetail();  
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    detailImg: ''
+    conData: []
   },
 
   /**
@@ -23,11 +23,11 @@ Page({
   onLoad: function (options) {
     // var that = this;
     console.log('options',options)
-    testDetail.getTestDetail(options.test_id, (res) => {
+    conDetail.gotoConList(options.consultant_id, (res) => {
       this.setData({
-        detailImg: res.data[0].details_img_url,
+        conData: res.data[0],
       });
-      console.log('res',res.data[0].details_img_url)
+      console.log('res',res.data[0])
     })
   },
 

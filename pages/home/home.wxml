@@ -1,7 +1,7 @@
 <swiper indicator-dots="true" autoplay="true" class="swiper">
     <block wx:for="{{bannerArr}}">
         <swiper-item class="banner-item" bindtap="onProductsItemTap" data-id="{{item.key_word}}">
-            <image class="item-image" src="{{item.label}}" mode="widthFix"/>
+            <image class="item-image" src="{{item.img_url}}" mode="widthFix"/>
         </swiper-item>
     </block>
 </swiper>

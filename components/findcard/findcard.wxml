@@ -1,9 +1,4 @@
-<view class="findcard-container" bind:tap="gotoTestList">
-    <view class="imgcard-info">
-        <view class="imgcard-title">{{findcard.expertise}}</view>
-        <view class="imgcard-text">{{findcard.introduction}}</view>
-        <view>{{findcard.price}}</view>
-        <view>{{findcard.form}}</view>
-    </view>
-    <image src="{{findcard.img_url}}" />
+<view class="findcard-container" bind:tap="gotoFindList">
+    <view class="title">{{findcard.name}}</view>
+    <view class="text">{{findcard.introduction}}</view>
 </view>
