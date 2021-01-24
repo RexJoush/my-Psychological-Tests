@@ -1,0 +1,122 @@
+{
+  "miniprogramRoot": "dist/",
+  "projectname": "myApp",
+  "description": "pst-testwxApp",
+  "cloudfunctionRoot": "cloud/main/",
+  "appid": "wxb731f13170eb52d2",
+  "setting": {
+    "urlCheck": true,
+    "es6": false,
+    "enhance": false,
+    "postcss": false,
+    "preloadBackgroundData": false,
+    "minified": false,
+    "newFeature": false,
+    "coverView": true,
+    "nodeModules": true,
+    "autoAudits": false,
+    "showShadowRootInWxmlPanel": true,
+    "scopeDataCheck": false,
+    "uglifyFileName": false,
+    "checkInvalidKey": true,
+    "checkSiteMap": true,
+    "uploadWithSourceMap": true,
+    "compileHotReLoad": false,
+    "useMultiFrameRuntime": false,
+    "useApiHook": true,
+    "babelSetting": {
+      "ignore": [],
+      "disablePlugins": [],
+      "outputPath": ""
+    },
+    "enableEngineNative": false,
+    "bundle": false,
+    "useIsolateContext": true,
+    "useCompilerModule": true,
+    "userConfirmedUseCompilerModuleSwitch": false,
+    "userConfirmedBundleSwitch": false,
+    "packNpmManually": false,
+    "packNpmRelationList": [],
+    "minifyWXSS": true
+  },
+  "compileType": "miniprogram",
+  "simulatorType": "wechat",
+  "simulatorPluginLibVersion": {},
+  "cloudfunctionTemplateRoot": "cloudfunctionTemplate",
+  "condition": {
+    "search": {
+      "list": []
+    },
+    "conversation": {
+      "list": []
+    },
+    "plugin": {
+      "list": []
+    },
+    "game": {
+      "list": []
+    },
+    "gamePlugin": {
+      "list": []
+    },
+    "miniprogram": {
+      "list": [
+        {
+          "id": -1,
+          "name": "pages/index/index",
+          "pathName": "pages/index/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "id": -1,
+          "name": "pages/explore/index",
+          "pathName": "pages/explore/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "id": -1,
+          "name": "pages/mine/index",
+          "pathName": "pages/mine/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "id": -1,
+          "name": "pages/reservation/index",
+          "pathName": "pages/reservation/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "id": 5,
+          "name": "pages/exploreDetail/index",
+          "pathName": "pages/exploreDetail/index",
+          "query": "consultant_id=1",
+          "scene": null
+        },
+        {
+          "id": -1,
+          "name": "pages/historyList/index",
+          "pathName": "pages/historyList/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "id": 6,
+          "name": "pages/indexDetail/index",
+          "pathName": "pages/indexDetail/index",
+          "query": "testid=2",
+          "scene": null
+        },
+        {
+          "id": -1,
+          "name": "pages/testIndex/index",
+          "pathName": "pages/testIndex/index",
+          "scene": null
+        }
+      ]
+    }
+  }
+}
