@@ -1,8 +1,0 @@
-<view class="courselist-container" bind:tap="gotoCourseList">
-    <image src="{{courselist.img_url}}" />
-    <view class="imgcard-info">
-        <view class="imgcard-title">{{courselist.introduction}}</view>
-        <view>{{courselist.title}}</view>
-        <view>{{courselist.subtitle}}</view>
-    </view>
-</view>

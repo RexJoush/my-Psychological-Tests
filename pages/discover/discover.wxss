@@ -1,4 +1,0 @@
-.test-container {
-    height: auto;
-    border-bottom: coral;
-}

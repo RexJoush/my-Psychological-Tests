@@ -1,4 +1,0 @@
-<view class="findcard-container" bind:tap="gotoFindList">
-    <view class="title">{{findcard.name}}</view>
-    <view class="text">{{findcard.introduction}}</view>
-</view>

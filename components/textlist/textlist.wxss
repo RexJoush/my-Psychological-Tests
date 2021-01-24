@@ -1,5 +1,0 @@
-.textlist-container {
-  display: block;
-  padding: 20rpx;
-  border-top: 1px solid #ccc;
-}

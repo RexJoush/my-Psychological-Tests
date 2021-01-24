@@ -1,1 +1,0 @@
-<image mode="widthFix" wx:if="{{detailImg}}" src="{{detailImg}}" class="detail-img"/>
